@@ -24,4 +24,6 @@ function addPerson(object) {
   document.querySelector('#date_of_birth')
     .innerText = 
       object.dob.date.slice(0, object.dob.date.search(/T/))
+  document.querySelector('#profile_picture')
+    .src = object.picture.large
 }
